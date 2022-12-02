@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UsersService = void 0;
 const common_1 = require("@nestjs/common");
-const prisma_1 = require("../prisma");
+const prisma_1 = require("src/prisma");
 let UsersService = class UsersService {
     async create(createUserDto) {
         try {
@@ -24,18 +24,6 @@ let UsersService = class UsersService {
     }
     findOne(id) {
         return `This action returns a #${id} user`;
-    }
-    async findoneByGoogleId(googleId) {
-        try {
-            const user = await prisma_1.default.user.findUnique({ where: { googleId } });
-            if (!user) {
-                throw new Error('User not found');
-            }
-            return user;
-        }
-        catch (e) {
-            throw new common_1.InternalServerErrorException(e.message);
-        }
     }
     update(id, updateUserDto) {
         return `This action updates a #${id} user`;

@@ -1,0 +1,1 @@
+{"version":3,"file":"socket-io.adapters.js","sourceRoot":"","sources":["../../src/adapters/socket-io.adapters.ts"],"names":[],"mappings":";;;AAAA,mEAAuD;AAEvD,MAAa,eAAgB,SAAQ,8BAAS;IAC5C,cAAc,CAAC,IAAY,EAAE,OAAa;QACxC,MAAM,MAAM,GAAG,KAAK,CAAC,cAAc,CAAC,IAAI,EAAE,OAAO,CAAC,CAAC;QAEnD,OAAO,MAAM,CAAC;IAChB,CAAC;CACF;AAND,0CAMC"}
